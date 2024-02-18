@@ -1,0 +1,14 @@
+"use strict";this.default_r_qwpltlpci=this.default_r_qwpltlpci||{};(function(_){var window=this;
+try{
+var XAc=function(a,b){return a.length!==b.length?!1:a.every((c,d)=>c.path===b[d].path)},YAc=function(a){const b=a.children.primary;return b?[...a.segments,...YAc(b)]:a.segments};_.ZAc=function(a){(a=a.R.getElementById("main"))&&a!==document.activeElement&&_.vPb(a)};
+_.$Ac=class{constructor(a,b,c){this.ea=a;this.R=b;this.router=c;a=c.events.pipe(_.Se(d=>d instanceof _.Xk||d instanceof _.Rg),_.Ff(null),_.wf(),_.Se(([d,e])=>!(d instanceof _.Xk&&e instanceof _.Xk)),_.z(([,d])=>d));b=_.Ne(b,"focus",{capture:!0}).pipe(_.Jf(a),_.Se(([,d])=>d instanceof _.Xk),_.z(([,d])=>d.id),_.Ff(-1));a.pipe(_.z(d=>{var e=this.router.url,f;const g=null==(f=this.ea.getContext("primary"))?void 0:f.route;f=g?_.ql(this.router,["."],{zm:g}):null;return{event:d,url:e,PMb:f,VUa:this.C()}}),
+_.wf(),_.Se(([d])=>d.event instanceof _.Xk)).pipe(_.Jf(b),_.Se(([[d,e],f])=>{(f=d.event.id===f&&document.activeElement!==document.body||!this.F(d,e))||(d=d.PMb,e=e.PMb,d&&e?(d=YAc(d.root),e=YAc(e.root),e=!XAc(d,e)):e=!1,f=!e);return f?!1:!0})).subscribe(()=>{_.ZAc(this)},d=>{const e=d instanceof Error?d.message:`${d}`;d={stack:d instanceof Error?d.stack||"":""};_.ch().logClientError({message:e,metadata:d,eventType:"navigationFocus",eventName:"navigationFocusError",errorExperience:6})})}};
+_.$Ac=_.pz([_.wPb(1,(0,_.gk)(_.Qg)),_.xPb([_.Zk,Document,_.tl])],_.$Ac);
+}catch(e){_._DumpException(e)}
+try{
+_.Yg("pm_navigation_focus_rif");
+var aBc=class extends _.$Ac{F(a,b){return!_.Hc(a.url).getPath().endsWith("rif-empty-page")&&!_.Hc(b.url).getPath().endsWith("rif-empty-page")}C(){return null}};aBc.J=function(a){return new (a||aBc)(_.l(_.Zk),_.l(_.Qg),_.l(_.tl))};aBc.ha=_.k({token:aBc,factory:aBc.J,oa:"root"});var bBc=class{};bBc.J=function(a){return new (a||bBc)};bBc.sa=_.rd({type:bBc,id:"pm_navigation_focus_rif"});bBc.qa=_.dd({providers:[{Aa:_.Bl,pb:{NavigationFocusRif:aBc}}]});_.Kf(bBc,"pm_navigation_focus_rif");
+_.Zg();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_r_qwpltlpci);
+// Google Inc.
